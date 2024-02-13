@@ -22,7 +22,7 @@ module.exports = {
     }
 
     if (!token) {
-      throw new GraphQLError('You have no token!');
+      return req;
     }
 
     // verify token and get user data out of it
