@@ -4,6 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom', '@apollo/client']},
   server: {
     port: 3000,
     open: true,
@@ -15,7 +17,8 @@ export default defineConfig({
       }
     }
   },
-  build: {
-    base: '/'
+  test: {
+    globals: true,
+    environment: 'happy-dom'
   }
-})
+});
