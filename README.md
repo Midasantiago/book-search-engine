@@ -6,7 +6,7 @@ Browse through a large selection of books and saved them to your list for later 
 
 ## Screenshot
 
-![Full Application View]()
+![Full Application View](assets/book_engine_SS.PNG)
     
 ## Table of Contents
     
